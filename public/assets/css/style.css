@@ -1,0 +1,321 @@
+*,
+*::before,
+*::after {
+  outline: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 0.7rem;
+  width: 7.5rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.box-shadow {
+  box-shadow: 0px 8px 10px 1px hsla(12, 88%, 59%, 0.7);
+}
+
+.btn-primary {
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+}
+.btn-primary:hover {
+  background-color: hsla(12, 88%, 59%, 0.7);
+}
+
+.btn-secondary {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(12, 88%, 59%);
+  box-shadow: none;
+}
+
+.col {
+  display: flex;
+  width: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+header nav ul {
+  display: none;
+}
+header::after {
+  content: "";
+  position: absolute;
+  background: url("../images/bg-tablet-pattern.svg");
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+.hero .hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  order: 2;
+}
+.hero .hero_content h1 {
+  font-size: 2.7rem;
+  color: hsl(228, 39%, 23%);
+}
+.hero .hero_content p {
+  padding: 0 1.7rem;
+  margin-top: 1.7rem;
+  font-size: 1.2rem;
+  color: hsl(227, 12%, 61%);
+}
+.hero .hero_content button {
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+}
+.hero .hero_illustration {
+  order: 1;
+}
+.hero .hero_illustration img {
+  width: 100%;
+}
+
+.about .about_content {
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+.about .about_content h2 {
+  font-size: 2.5rem;
+  color: hsl(228, 39%, 23%);
+}
+.about .about_content p {
+  margin-top: 1.7rem;
+  padding: 0 1.7rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: hsl(227, 12%, 61%);
+}
+.about .about_list {
+  flex-direction: column;
+}
+.about .about_list .list {
+  margin-top: 3rem;
+}
+.about .about_list .list .list_title {
+  display: flex;
+  align-items: center;
+  background-color: hsl(13, 100%, 96%);
+  border-radius: 18px 0 0 18px;
+  margin-right: -1rem;
+}
+.about .about_list .list .list_title span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 24px;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(12, 88%, 59%);
+}
+.about .about_list .list .list_title h3 {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: hsl(228, 39%, 23%);
+}
+.about .about_list .list .list_content p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: hsl(227, 12%, 61%);
+}
+
+.cta {
+  background-color: hsl(12, 88%, 59%);
+  padding: 7rem 0;
+  margin-top: 2rem;
+}
+.cta .container {
+  text-align: center;
+}
+.cta .container p {
+  color: hsl(0, 0%, 98%);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.cta .container button {
+  margin-top: 1.7rem;
+  font-size: 0.9rem;
+  width: 9rem;
+  height: 3rem;
+}
+
+.footer {
+  background-color: hsl(228, 39%, 23%);
+  padding: 3rem 0 2rem 0;
+}
+.footer .container .newsletter {
+  display: flex;
+  justify-content: center;
+}
+.footer .container .newsletter input {
+  width: 60%;
+  margin-right: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  height: 3rem;
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+.footer .container .newsletter button {
+  width: 5rem;
+  height: 3rem;
+  font-size: 0.9rem;
+}
+.footer .container .footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container .footer-nav ul {
+  list-style: none;
+}
+.footer .container .footer-nav ul li {
+  margin-top: 1.2rem;
+}
+.footer .container .footer-nav ul li a {
+  color: hsl(0, 0%, 98%);
+}
+.footer .container .social-media {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .container .social-media a img {
+  width: 2.5rem;
+}
+.footer .container .social-media,
+.footer .container .footer-logo,
+.footer .container .copyright {
+  text-align: center;
+}
+.footer .container .copyright p {
+  color: hsl(227, 12%, 61%);
+}
+.footer .container div:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 750px;
+  }
+  .col {
+    width: 50%;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  header nav ul li {
+    text-decoration: none;
+  }
+  header nav ul li a {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+  }
+  header nav ul li a:hover {
+    color: hsl(227, 12%, 61%);
+  }
+  header nav ul li:not(:first-child) {
+    padding-left: 1.8em;
+  }
+  .hero {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .hero .hero_content {
+    align-items: flex-start;
+    text-align: left;
+    order: 1;
+  }
+  .hero .hero_content h1 {
+    font-size: 3.5rem;
+  }
+  .hero .hero_content p {
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .hero .hero_illustration {
+    order: 2;
+  }
+  .about {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .about .about_contentl {
+    text-align: left;
+  }
+  .about .about_contentl h2 {
+    font-size: 3rem;
+  }
+  .about .about_contentl p {
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo footernav newsletter" "socialmedia footernav copyright";
+  }
+  .footer .container .newsletter {
+    grid-area: newsletter;
+  }
+  .footer .container .footer-nav {
+    grid-area: footernav;
+  }
+  .footer .container .social-media {
+    grid-area: socialmedia;
+  }
+  .footer .container .footer-logo {
+    grid-area: logo;
+  }
+  .footer .container .copyright {
+    grid-area: copyright;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}/*# sourceMappingURL=style.css.map */

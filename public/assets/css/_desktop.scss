@@ -1,0 +1,106 @@
+@media (min-width: 769px) {
+  .container {
+    width: 750px;
+  }
+  .col {
+    width: 50%;
+  }
+  header {
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          text-decoration: none;
+          a {
+            font-size: 0.85rem;
+            font-weight: $font-weight-700;
+            color: $clr-primary-blue;
+            &:hover {
+              color: $clr-neutral-gray;
+            }
+          }
+        }
+        li:not(:first-child) {
+          padding-left: 1.8em;
+        }
+      }
+    }
+  }
+  .hero {
+    flex-direction: row;
+    gap: 5rem;
+    .hero_content {
+      align-items: flex-start;
+      text-align: left;
+      order: 1;
+      h1 {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: $font-size;
+        width: 20rem;
+      }
+    }
+    .hero_illustration {
+      order: 2;
+    }
+  }
+
+  .about {
+    flex-direction: row;
+    gap: 5rem;
+    .about_contentl {
+      text-align: left;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: $font-size;
+        width: 20rem;
+      }
+    }
+  }
+  .footer {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "logo footernav newsletter"
+        "socialmedia footernav copyright";
+
+      .newsletter {
+        grid-area: newsletter;
+      }
+      .footer-nav {
+        grid-area: footernav;
+      }
+      .social-media {
+        grid-area: socialmedia;
+      }
+      .footer-logo {
+        grid-area: logo;
+      }
+      .copyright {
+        grid-area: copyright;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
