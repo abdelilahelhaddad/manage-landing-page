@@ -122,7 +122,16 @@ header {
     .close-menu {
       display: none;
     }
+    &.show {
+      .burger-menu {
+        display: none;
+      }
+      .close-menu {
+        display: block;
+      }
+    }
   }
+
   button {
     display: none;
   }

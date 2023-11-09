@@ -103,6 +103,12 @@ header nav {
 header .mobile-menu .close-menu {
   display: none;
 }
+header .mobile-menu.show .burger-menu {
+  display: none;
+}
+header .mobile-menu.show .close-menu {
+  display: block;
+}
 header button {
   display: none;
 }
