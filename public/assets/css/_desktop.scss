@@ -30,6 +30,12 @@
         }
       }
     }
+    .mobile-menu {
+      display: none;
+    }
+    button {
+      display: block;
+    }
   }
   .hero {
     flex-direction: row;

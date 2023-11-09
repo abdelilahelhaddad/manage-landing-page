@@ -15,5 +15,4 @@
 .DS_Store
 content.
 package-lock.json
-design
 node_modules
