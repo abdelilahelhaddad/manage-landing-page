@@ -230,6 +230,41 @@ header {
   }
 }
 
+.testimonials {
+  h2 {
+    color: $clr-primary-blue;
+  }
+  .owl-carousel {
+    text-align: center;
+    .testimonial {
+      background: $clr-neutral-light-gray;
+      img {
+        width: 50px;
+      }
+      h3 {
+        color: $clr-primary-blue;
+      }
+      p {
+        color: $clr-neutral-gray;
+      }
+    }
+    .owl-dots {
+      .owl-dot {
+        width: 6px;
+        height: 6px;
+        border: 1px solid $clr-primary-orange;
+        border-radius: 50%;
+      }
+      .owl-dot.active {
+        background: $clr-primary-orange;
+      }
+      & .owl-dot:not(:last-child) {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
+
 .cta {
   background-color: $clr-primary-orange;
   padding: 7rem 0;

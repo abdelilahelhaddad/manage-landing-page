@@ -202,6 +202,37 @@ header::after {
   color: hsl(227, 12%, 61%);
 }
 
+.testimonials h2 {
+  color: hsl(228, 39%, 23%);
+}
+.testimonials .owl-carousel {
+  text-align: center;
+}
+.testimonials .owl-carousel .testimonial {
+  background: hsl(0, 0%, 98%);
+}
+.testimonials .owl-carousel .testimonial img {
+  width: 50px;
+}
+.testimonials .owl-carousel .testimonial h3 {
+  color: hsl(228, 39%, 23%);
+}
+.testimonials .owl-carousel .testimonial p {
+  color: hsl(227, 12%, 61%);
+}
+.testimonials .owl-carousel .owl-dots .owl-dot {
+  width: 6px;
+  height: 6px;
+  border: 1px solid hsl(12, 88%, 59%);
+  border-radius: 50%;
+}
+.testimonials .owl-carousel .owl-dots .owl-dot.active {
+  background: hsl(12, 88%, 59%);
+}
+.testimonials .owl-carousel .owl-dots .owl-dot:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
 .cta {
   background-color: hsl(12, 88%, 59%);
   padding: 7rem 0;
