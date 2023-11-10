@@ -202,27 +202,48 @@ header::after {
   color: hsl(227, 12%, 61%);
 }
 
+.testimonials {
+  text-align: center;
+  margin-top: 5rem;
+}
 .testimonials h2 {
+  font-size: 2.5rem;
   color: hsl(228, 39%, 23%);
 }
 .testimonials .owl-carousel {
-  text-align: center;
+  margin-top: 4rem;
 }
 .testimonials .owl-carousel .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 8px;
+  padding: 3rem 0;
+  margin: 3rem auto 0 auto;
   background: hsl(0, 0%, 98%);
+  position: relative;
 }
 .testimonials .owl-carousel .testimonial img {
-  width: 50px;
+  width: 90px;
+  top: -18%;
+  position: absolute;
 }
 .testimonials .owl-carousel .testimonial h3 {
+  margin: 1.5rem 0;
   color: hsl(228, 39%, 23%);
 }
 .testimonials .owl-carousel .testimonial p {
   color: hsl(227, 12%, 61%);
+  margin: 0 1.5rem;
+}
+.testimonials .owl-carousel .owl-dots {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 .testimonials .owl-carousel .owl-dots .owl-dot {
-  width: 6px;
-  height: 6px;
+  width: 9px;
+  height: 9px;
   border: 1px solid hsl(12, 88%, 59%);
   border-radius: 50%;
 }
