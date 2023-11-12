@@ -7,6 +7,8 @@
   }
   header {
     nav {
+      display: block;
+      position: static;
       ul {
         display: flex;
         justify-content: space-between;
@@ -58,16 +60,42 @@
   }
 
   .about {
+    display: flex;
     flex-direction: row;
     gap: 5rem;
-    .about_contentl {
+    .about_content {
       text-align: left;
       h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       p {
         font-size: $font-size;
-        width: 20rem;
+        width: 25rem;
+        padding: 0;
+      }
+    }
+    .about_list {
+      margin-top: 2rem;
+    }
+  }
+  .cta {
+    margin-top: 8rem;
+    padding: 4rem 0;
+    .container {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        text-align: left;
+        font-size: 2.5rem;
+        width: 600px;
+      }
+      button {
+        width: 7.5rem;
+        height: 2.5rem;
+        font-size: 0.7rem;
+        margin-top: 0;
       }
     }
   }
@@ -88,12 +116,23 @@
       }
       .social-media {
         grid-area: socialmedia;
+        margin-bottom: 0;
+        align-self: center;
+        justify-content: center;
+        margin: 0;
+        a img {
+          width: 1.5rem;
+        }
+        a:not(:first-child) {
+          margin-left: 1rem;
+        }
       }
       .footer-logo {
         grid-area: logo;
       }
       .copyright {
         grid-area: copyright;
+        align-self: center;
       }
     }
   }
