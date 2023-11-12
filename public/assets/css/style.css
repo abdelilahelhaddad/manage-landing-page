@@ -371,6 +371,7 @@ header::after {
   .hero {
     flex-direction: row;
     gap: 5rem;
+    margin-top: 5rem;
   }
   .hero .hero_content {
     align-items: flex-start;
@@ -391,6 +392,7 @@ header::after {
     display: flex;
     flex-direction: row;
     gap: 5rem;
+    margin-top: 4rem;
   }
   .about .about_content {
     text-align: left;
@@ -406,8 +408,11 @@ header::after {
   .about .about_list {
     margin-top: 2rem;
   }
+  .testimonials {
+    margin-top: 9rem;
+  }
   .cta {
-    margin-top: 8rem;
+    margin-top: 9rem;
     padding: 4rem 0;
   }
   .cta .container {
@@ -444,7 +449,7 @@ header::after {
     margin-bottom: 0;
     align-self: center;
     justify-content: center;
-    margin: 0;
+    margin-bottom: 0 !important;
   }
   .footer .container .social-media a img {
     width: 1.5rem;
