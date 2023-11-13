@@ -7,7 +7,6 @@ mobileMenu.addEventListener("click", () => {
 });
 
 $(".owl-carousel").owlCarousel({
-  center: true,
   nav: false,
   lazyLoad: true,
   loop: true,
@@ -23,9 +22,11 @@ $(".owl-carousel").owlCarousel({
     },
     769: {
       items: 2,
+      center: true,
     },
-    1024: {
+    1440: {
       items: 3,
+      center: true,
     },
   },
 });

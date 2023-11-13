@@ -5,6 +5,12 @@
   .col {
     width: 50%;
   }
+  body {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 120% -10%;
+  }
   header {
     nav {
       display: block;
@@ -52,7 +58,8 @@
       }
       p {
         font-size: $font-size;
-        width: 20rem;
+        width: 24rem;
+        padding: 0;
       }
     }
     .hero_illustration {
@@ -86,6 +93,10 @@
   .cta {
     margin-top: 9rem;
     padding: 4rem 0;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: 200px -140px;
     .container {
       text-align: left;
       display: flex;
@@ -115,16 +126,28 @@
 
       .newsletter {
         grid-area: newsletter;
+        justify-content: flex-end;
+        input {
+          width: 40%;
+          height: 2.5rem;
+        }
+        button {
+          width: 4.5rem;
+          height: 2.5rem;
+          font-size: 0.7rem;
+        }
       }
       .footer-nav {
         grid-area: footernav;
+        justify-content: space-between;
       }
       .social-media {
         grid-area: socialmedia;
         margin-bottom: 0;
         align-self: center;
-        justify-content: center;
+        justify-content: left;
         margin-bottom: 0 !important;
+        justify-content: flex-start;
         a img {
           width: 1.5rem;
         }
@@ -134,9 +157,11 @@
       }
       .footer-logo {
         grid-area: logo;
+        text-align: left;
       }
       .copyright {
         grid-area: copyright;
+        text-align: right;
         align-self: center;
       }
     }

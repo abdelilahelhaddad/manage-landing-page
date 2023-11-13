@@ -10,6 +10,10 @@
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 1rem;
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 100px -30px;
 }
 
 body.opened-menu {
@@ -67,7 +71,7 @@ body.opened-menu .container header nav ul li a {
 }
 
 .box-shadow {
-  box-shadow: 0px 8px 10px 1px hsla(12, 88%, 59%, 0.4);
+  box-shadow: 0px 8px 10px 1px hsla(12, 88%, 59%, 0.6);
 }
 
 .btn-primary {
@@ -75,7 +79,7 @@ body.opened-menu .container header nav ul li a {
   color: hsl(0, 0%, 98%);
 }
 .btn-primary:hover {
-  background-color: hsla(12, 88%, 59%, 0.4);
+  background-color: hsla(12, 88%, 59%, 0.6);
 }
 
 .btn-secondary {
@@ -258,6 +262,10 @@ header::after {
   background-color: hsl(12, 88%, 59%);
   padding: 7rem 0;
   margin-top: 2rem;
+  background-image: url("../images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 0 50%;
 }
 .cta .container {
   text-align: center;
@@ -297,6 +305,9 @@ header::after {
   height: 3rem;
   font-size: 0.9rem;
 }
+.footer .container .newsletter button:hover {
+  background-color: hsl(12, 88%, 59%);
+}
 .footer .container .footer-nav {
   display: flex;
   justify-content: space-around;
@@ -335,6 +346,12 @@ header::after {
   }
   .col {
     width: 50%;
+  }
+  body {
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 120% -10%;
   }
   header nav {
     display: block;
@@ -383,7 +400,8 @@ header::after {
   }
   .hero .hero_content p {
     font-size: 1rem;
-    width: 20rem;
+    width: 24rem;
+    padding: 0;
   }
   .hero .hero_illustration {
     order: 2;
@@ -414,6 +432,10 @@ header::after {
   .cta {
     margin-top: 9rem;
     padding: 4rem 0;
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: 200px -140px;
   }
   .cta .container {
     text-align: left;
@@ -440,16 +462,28 @@ header::after {
   }
   .footer .container .newsletter {
     grid-area: newsletter;
+    justify-content: flex-end;
+  }
+  .footer .container .newsletter input {
+    width: 40%;
+    height: 2.5rem;
+  }
+  .footer .container .newsletter button {
+    width: 4.5rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
   }
   .footer .container .footer-nav {
     grid-area: footernav;
+    justify-content: space-between;
   }
   .footer .container .social-media {
     grid-area: socialmedia;
     margin-bottom: 0;
     align-self: center;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 0 !important;
+    justify-content: flex-start;
   }
   .footer .container .social-media a img {
     width: 1.5rem;
@@ -459,9 +493,11 @@ header::after {
   }
   .footer .container .footer-logo {
     grid-area: logo;
+    text-align: left;
   }
   .footer .container .copyright {
     grid-area: copyright;
+    text-align: right;
     align-self: center;
   }
 }
